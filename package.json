@@ -1,0 +1,25 @@
+{
+  "name": "mohannad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dom.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec",
+    "cover": "cover test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG5/MAAK-To-do-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG5/MAAK-To-do-app/issues"
+  },
+  "homepage": "https://github.com/FACG5/MAAK-To-do-app#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
