@@ -66,6 +66,25 @@ var todoFunctions = {
     // in the new todo array, all elements will remain unchanged except the one with id: idToMark
     // this element will have its done value toggled
     // hint: array.map
+    const tempArray = todoFunctions.cloneArrayOfObjects(todos);
+    if(!idToMark)
+     return 'Please Enter Anything';
+    if (typeof idToMark === 'string')
+      return "Please Don't Enter string Just Number";
+    if (typeof idToMark === 'boolean')
+      return "Please Don't Enter boolean Just Number";
+    if (typeof idToMark === 'function')
+      return "Please Don't Enter function Just Number";
+    if (Array.isArray(idToMark))
+      return "Please Don't Enter Array Just Number";
+      
+    for(var i = 0 ; i < tempArray.length ; i++){
+      if(idToMark == tempArray[i].id){
+        // convert the boolean done
+        tempArray[i].done = !tempArray[i].done;
+      }
+    }
+    return tempArray;
   },
 
   sortTodos: function(todos, sortFunction) {
