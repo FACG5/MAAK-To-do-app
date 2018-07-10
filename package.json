@@ -4,8 +4,8 @@
   "description": "",
   "main": "dom.js",
   "scripts": {
-    "test": "tape test.js | tap-spec",
-    "cover": "cover test.js"
+    "test": "node js/test.js | tap-spec",
+    "cover": "cover js/test.js"
   },
   "repository": {
     "type": "git",
