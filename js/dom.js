@@ -12,6 +12,11 @@
     { id: -1, description: 'third todo' },*/
   ]; // this is our initial todoList
 
+
+    if (localStorage.getItem("state")) {
+        state = JSON.parse(localStorage.getItem("state"))
+    }
+
   // This function takes a todo, it returns the DOM node representing that todo
   var createTodoNode = function(todo) {
     var todoNode = document.createElement('li');
@@ -121,7 +126,8 @@ if(confirm( "Are you sure for this action !!")){
       todoListNode.insertBefore(createTodoNode(todo),todoListNode.childNodes[0]);
     });
 
-    // you may want to add a class for css
+      localStorage.setItem("state", JSON.stringify(state));
+      // you may want to add a class for css
     container.replaceChild(todoListNode, container.firstChild);
   };
 
