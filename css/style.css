@@ -4,39 +4,73 @@
   /*font-family: 'Satisfy', cursive;*/
 }
 .general-container {
-  background-image: url(../img/01.jpg);
-  background-position: center center;
+  background: url(../img/03.jpeg) center center no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
-.cover {
-  background: #1B402B;
-  opacity: .7;
-  min-height: 100vh;
-  padding: 20px;
+.cover{
+  padding:50px;
 }
 header{
   padding: 20px;
   text-align: center;
   word-spacing: 2px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 header h1{
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
+  margin-bottom:20px;
+}
+header p{
+  text-transform: capitalize;
 }
 .main {
-  background-color:#fff;
-  width: 600px;
+  width: 80%;
   min-height: 500px;
   margin: 0 auto;
   padding: 20px;
-  letter-spacing: 10px;
+  letter-spacing:1px;
+}
+
+.container form{
+  height: 80px;
+  width:80%;
+  margin: 0 auto;
+}
+.container form .input{
+  width:600px;
+  padding: 10px;
+  border-radius:20px;
+  outline: none;
+  border: 2px solid #000;
+  height: 35px;
+  color: #000;
+  font-size: 20px;
+  background: none;
+}
+.container form  .add-btn{
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  border:none;
+  font-size:20px;
+  border-radius:20px;
+  font-weight: bold;
+  padding: 10px;
+  height: 55px;
+}
+.container form  .add-btn:hover{
+  background: none;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
 }
 
 

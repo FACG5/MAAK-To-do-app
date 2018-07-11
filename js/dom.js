@@ -7,9 +7,9 @@
   var addTodoForm = document.getElementById('add-todo');
 
   var state = [
-    { id: -3, description: 'first todo' },
+   /* { id: -3, description: 'first todo' },
     { id: -2, description: 'second todo' },
-    { id: -1, description: 'third todo' },
+    { id: -1, description: 'third todo' },*/
   ]; // this is our initial todoList
 
   // This function takes a todo, it returns the DOM node representing that todo
@@ -85,9 +85,16 @@ span2.classList.add("fa-check-circle");
 
       // hint: todoFunctions.addTodo
       var obj = {};
+      if(description1.trim()===''){
+        alert("hhh");
+      }else{
       obj.description = description1;
+
       var newState = todoFunctions.addTodo(state, obj) // ?? change this!
       update(newState);
+      inp.value='';
+      }
+      
     });
   }
 
