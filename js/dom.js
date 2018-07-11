@@ -19,6 +19,7 @@
 
     // add span holding description
     var span1 = document.createElement('span');
+    span1.classList.add("task")
     span1.textContent = todo.description;
 
     if(todo.done){
