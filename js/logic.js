@@ -89,8 +89,6 @@ var todoFunctions = {
     }
     return tempArray;
   },
-
-
     
 
   sortTodos: function(todos, sortFunction) {
