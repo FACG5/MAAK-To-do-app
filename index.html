@@ -18,8 +18,16 @@
         <main class="main">
           <div class="container">
             <form id="add-todo">
-              <input type="text" id="task-input" name="description" value="">
-              <input type="submit" id="add-btn" name="" value="Submit">
+              <input type="text" class="input" id ="task-input" placeholder="Enter your new task ... " name="description" value="">
+              <input type="submit" class="add-btn" id="add-task" name="" value="Submit">
+              <div class="sort">
+                <form class="priority" action="POST">
+                    <input type="radio" class="a" name="Priority" value="male"> A
+                    <input type="radio" class="b" name="Priority" value="female"> B
+                    <input type="radio" class="c" name="Priority" value="other"> C
+                  </form>
+              </div>              
+
             </form>
             <div id = "todo-container">
                 <ul class="list" id "tasks-list" >
