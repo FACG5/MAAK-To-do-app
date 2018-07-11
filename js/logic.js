@@ -9,7 +9,7 @@ var todoFunctions = {
     var idCounter = 0;
 
     function incrementCounter() {
-      localStorage.setItem("idCounter",idCounter+1);
+      localStorage.setItem(idCounter,idCounter+1);
       return (idCounter += 1);
     }
 
@@ -82,7 +82,7 @@ var todoFunctions = {
       return "Please Don't Enter function Just Number";
     if (Array.isArray(idToMark))
       return "Please Don't Enter Array Just Number";
-      
+
     for(var i = 0 ; i < tempArray.length ; i++){
       if(idToMark == tempArray[i].id){
         // convert the boolean done
