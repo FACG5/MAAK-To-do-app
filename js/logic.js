@@ -90,6 +90,9 @@ var todoFunctions = {
     return tempArray;
   },
 
+
+    
+
   sortTodos: function(todos, sortFunction) {
     // stretch goal! Do this last
     // should leave the input arguement todos unchanged (you can use cloneArrayOfObjects)
