@@ -44,3 +44,42 @@ t.deepEqual(expected,actuall,"The the two Objects should not be equal");
 
 
 /* The Test Of addTodo Function (end-test)*/
+
+// The Test Of  delete Function (start-test) 
+var todo = [{
+  id: 1,
+  description: 'task',
+  done: false,
+},
+{
+  id: 2,
+  description: 'task',
+  done: false,
+},
+];
+
+test('onDelete', function(t) {
+var actual = logic.deleteTodo(todo, 1);
+var expected = [{
+  id: 2,
+  description: 'task',
+  done: false,
+}];
+t.deepEqual(actual, expected, "deleted");
+t.end();
+});
+
+
+test('onDelete', function(t) {
+var actual = logic.deleteTodo(todo, 2);
+var expected = [{
+  id: 1,
+  description: 'task',
+  done: false,
+}];
+t.deepEqual(actual, expected, "deleted");
+t.end();
+});
+
+// The Test Of  delete Function (end-test)
+
