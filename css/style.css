@@ -14,9 +14,12 @@
 header{
   padding: 20px;
   text-align: center;
+  letter-spacing: 2px;
   word-spacing: 2px;
-  color: #000;
+  color: #fff;
   font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+
 }
 header h1{
   text-transform: uppercase;
@@ -31,11 +34,9 @@ header p{
   text-transform: capitalize;
 }
 .main {
-  width: 80%;
-  min-height: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  letter-spacing:1px;
+  background-color: rgba(255, 255, 255, 0.55);
+  width: 650px;
+
 }
 
 .container form{

@@ -45,6 +45,10 @@ t.deepEqual(expected,actuall,"The the two Objects should not be equal");
 
 /* The Test Of addTodo Function (end-test)*/
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e4770164057578fdc0a18ce974deaf90735e81f3
 // The Test Of  delete Function (start-test) 
 var todo = [{
   id: 1,
@@ -222,4 +226,8 @@ test('sortTodos test scc', function(t) {
 
 
 
+<<<<<<< HEAD
+>>>>>>> af20d41ed7e798661a8d8fac5e7c3190f9220c72
+=======
+>>>>>>> e4770164057578fdc0a18ce974deaf90735e81f3
 
