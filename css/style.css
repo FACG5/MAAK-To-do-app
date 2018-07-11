@@ -137,3 +137,31 @@ footer{
   height: 50px;
   padding: 20px 10px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  ul{
+    margin-top: 60px;
+  }
+  ul li {
+    width: 180px;
+  }
+  .container form .input{
+    width: 198px;
+  }
+  .container form .add-btn{
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
