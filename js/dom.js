@@ -24,8 +24,12 @@
 
     if(todo.done){
       span1.classList.add("done");
+      todoNode.classList.add('done1');
+
     } else {
       span1.classList.remove("done");
+      todoNode.classList.remove('done1');
+
     }
 
 
@@ -52,7 +56,11 @@ span2.classList.add("fa-check-circle");
     span3.classList.add("far");    
     span3.addEventListener('click', function(event){
       var newState = todoFunctions.deleteTodo(state, todo.id);
-      update(newState);
+     /* confirm("Are you sure for this action !!");*/
+if(confirm( "Are you sure for this action !!")){
+  update(newState);
+  
+}
     });
     todoNode.appendChild(span3);
 
@@ -87,7 +95,7 @@ span2.classList.add("fa-check-circle");
       // hint: todoFunctions.addTodo
       var obj = {};
       if(description1.trim()===''){
-        alert("hhh");
+        alert("Spaces not allow !!");
       }else{
       obj.description = description1;
 
