@@ -82,7 +82,6 @@ t.end();
 });
 
 // The Test Of  delete Function (end-test)
-=======
 
 
 
@@ -144,34 +143,45 @@ test("markTodo function", function(t) {
       
 });
 
-
-
-
-
-
 /* The Test Of markTodo Function (end-test)*/
 
+var arrSortTodos = [{
+    id: 0,
+    description: 'first todo',
+    done: false,
+    priority:'C'
+},
+    {
+        id: 1,
+        description: 'second todo',
+        done: false,
+        priority:'B'
+    },
+    {
+        id: 2,
+        description: 'third todo',
+        done: false,
+        priority:'C'
+    },
+    {
+        id: 2,
+        description: 'third todo',
+        done: false,
+        priority:'A'
+    },
+    {
+        id: 2,
+        description: 'third todo',
+        done: false,
+        priority:'A'
+    }
 
+];
 
+test('sortTodos test scc', function(t) {
+    var actuall =logic.sortTodos(arrSortTodos,[]);
+    var expected = [ { id: 2, description: 'third todo', done: false, priority: 'A' }, { id: 2, description: 'third todo', done: false, priority: 'A' }, { id: 1, description: 'second todo', done: false, priority: 'B' }, { id: 0, description: 'first todo', done: false, priority: 'C' }, { id: 2, description: 'third todo', done: false, priority: 'C' } ]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    t.deepEqual(expected,actuall,"Done");
+    t.end();
+});
