@@ -45,6 +45,7 @@ t.deepEqual(expected,actuall,"The the two Objects should not be equal");
 
 /* The Test Of addTodo Function (end-test)*/
 
+<<<<<<< HEAD
 // The Test Of  delete Function (start-test) 
 var todo = [{
   id: 1,
@@ -82,4 +83,56 @@ t.end();
 });
 
 // The Test Of  delete Function (end-test)
+=======
+
+
+
+
+/* The Test Of markTodo Function (start-test)*/
+
+
+
+test('Example test', function(t) {
+  var arr = [{
+    id: 1,
+    description: 'Task',
+    done: true}];
+
+  var actuall =logic.markTodo(arr,1);
+  var expected = [{id: 1,description:'Task',done: false}];
+  t.deepEqual(expected,actuall,"The note is marked");
+  t.end();
+});
+
+
+
+
+
+
+/* The Test Of markTodo Function (end-test)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> af20d41ed7e798661a8d8fac5e7c3190f9220c72
 

@@ -18,6 +18,11 @@
 header{
   padding: 20px;
   text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
 }
 header h1{
   text-transform: uppercase;
@@ -28,8 +33,8 @@ header h1{
   font-family: 'Dancing Script', cursive;
 }
 .main {
-  background-color: rgba(2, 2, 0, 0.55);
-  width: 600px;
+  background-color: rgba(255, 255, 255, 0.55);
+  width: 650px;
   min-height: 500px;
   margin: 0 auto;
   padding: 20px;
