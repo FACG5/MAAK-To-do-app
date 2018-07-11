@@ -9,6 +9,7 @@ var todoFunctions = {
     var idCounter = 0;
 
     function incrementCounter() {
+      localStorage.setItem("idCounter",idCounter+1);
       return (idCounter += 1);
     }
 
@@ -96,7 +97,27 @@ var todoFunctions = {
     // should leave the input arguement todos unchanged (you can use cloneArrayOfObjects)
     // sortFunction will have same signature as the sort function in array.sort
     // hint: array.slice, array.sort
+      todos.sort(function(a, b) {
+          var A = a.priority;
+          var B = b.priority;
+          if (A < B) {
+              return -1;
+          }
+          if (A > B) {
+              return 1;
+          }
+          return 0;
+      });
+
+      // var newTodos = [];
+      // for(var i=0; i<todos.length;i++){
+      //     newTodos.push(todos[i].priority);
+      // }
+      // return newTodos;
+
+      return todos;
   },
+
 };
 
 

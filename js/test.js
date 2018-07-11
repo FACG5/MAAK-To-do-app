@@ -153,6 +153,54 @@ test("markTodo function", function(t) {
 
 
 
+// ---------- Asmaa code start
+
+var arrSortTodos = [{
+    id: 0,
+    description: 'first todo',
+    done: false,
+    priority:'C'
+},
+    {
+        id: 1,
+        description: 'second todo',
+        done: false,
+        priority:'B'
+    },
+    {
+        id: 2,
+        description: 'third todo',
+        done: false,
+        priority:'C'
+    },
+    {
+        id: 2,
+        description: 'third todo',
+        done: false,
+        priority:'A'
+    },
+    {
+        id: 2,
+        description: 'third todo',
+        done: false,
+        priority:'A'
+    }
+
+];
+
+test('sortTodos test scc', function(t) {
+    var actuall =logic.sortTodos(arrSortTodos,[]);
+    var expected = '[ { id: 2, description: \'third todo\', done: false, priority: \'A\' },\n' +
+        '  { id: 2, description: \'third todo\', done: false, priority: \'A\' },\n' +
+        '  { id: 1, description: \'second todo\', done: false, priority: \'B\' },\n' +
+        '  { id: 0, description: \'first todo\', done: false, priority: \'C\' },\n' +
+        '  { id: 2, description: \'third todo\', done: false, priority: \'C\' } ]';
+    // var expected= ['A','A','B','C','C'];
+    t.deepEqual(expected,actuall,"Done");
+    t.end();
+});
+
+// ---------- End code end
 
 
 
