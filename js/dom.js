@@ -109,7 +109,7 @@ span2.classList.add("fa-check-circle");
     var todoListNode = document.createElement('ul');
 
     state.forEach(function(todo) {
-      todoListNode.appendChild(createTodoNode(todo));
+      todoListNode.insertBefore(createTodoNode(todo),todoListNode.childNodes[0]);
     });
 
     // you may want to add a class for css
