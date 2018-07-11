@@ -2,25 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAAK To-Do-App</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chela+One|Dancing+Script|Gaegu|Gloria+Hallelujah|Satisfy|Shrikhand" rel="stylesheet">
   </head>
-  <body>
-<div class="general-container">
-  <div class="cover">
-  <div class="container">
-    <form id="add-todo">
-      <input type="text" name="description" value="">
-      <input type="submit" name="" value="Submit">
-    </form>
-    <div id = "todo-container">
-        <ul>
-        </ul>
+  <body class="general-container">
+      <div class="cover">
+        <header>
+          <h1>daily to do list</h1>
+        </header>
+        <main class="main">
+          <div class="container">
+            <form id="add-todo">
+              <input type="text" name="description" value="">
+              <input type="submit" name="" value="Submit">
+            </form>
+            <div id = "todo-container">
+                <ul>
+                </ul>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <address>
+            &copy; 2018 by MAAK team
+          </address>
+        </footer>
     </div>
-    </div>
-    </div>
-</div>
+    <!-- JS -->
+       <script type="text/javascript" src = "./js/logic.js"></script>
+       <script type="text/javascript" src = "./js/dom.js"></script>
   </body>
-  <script type="text/javascript" src = "./js/logic.js"></script>
-  <script type="text/javascript" src = "./js/dom.js"></script>
 </html>
