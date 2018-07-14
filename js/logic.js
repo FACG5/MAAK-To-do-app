@@ -89,13 +89,27 @@ var todoFunctions = {
     }
     return tempArray;
   },
+    
 
   sortTodos: function(todos, sortFunction) {
     // stretch goal! Do this last
     // should leave the input arguement todos unchanged (you can use cloneArrayOfObjects)
     // sortFunction will have same signature as the sort function in array.sort
     // hint: array.slice, array.sort
-  },
+      todos.sort(function(a, b) {
+          var A = a.priority;
+          var B = b.priority;
+          if (A < B) {
+              return -1;
+          }
+          if (A > B) {
+              return 1;
+          }
+          return 0;
+      });
+      return todos;
+  }
+
 };
 
 
